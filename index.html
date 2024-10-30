@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwick Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="light-mode">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <img src="/api/placeholder/32/32" alt="Tailwick Logo" />
+          <span>Tailwick</span>
+        </div>
+      </div>
+
+      <div class="sidebar-content">
+        <div class="menu-label">MENU</div>
+
+        <!-- Dashboard Menu -->
+        <div class="menu-item">
+          <div class="menu-header">
+            <i class="ri-dashboard-line"></i>
+            <span>Dashboards</span>
+            <i class="fas fa-chevron-down arrow"></i>
+          </div>
+          <div class="submenu">
+            <a href="#" class="submenu-item">Analytics</a>
+            <a href="#" class="submenu-item active">Ecommerce</a>
+            <a href="#" class="submenu-item">Email</a>
+            <a href="#" class="submenu-item">HR</a>
+            <a href="#" class="submenu-item">Social</a>
+          </div>
+        </div>
+
+        <!-- Apps Menu Items -->
+        <div class="menu-item">
+          <div class="menu-header">
+            <i class="ri-file-list-2-line"></i>
+            <span>Program</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-header">
+            <i class="ri-shield-check-line"></i>
+            <span>Certificate</span>
+            <i class="fas fa-chevron-down arrow"></i>
+          </div>
+          <div class="submenu">
+            <a href="#" class="submenu-item">Inbox</a>
+            <a href="#" class="submenu-item">Read Email</a>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-header">
+            <i class="ri-user-line"></i>
+            <span>User</span>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-header">
+            <i class="ri-money-dollar-circle-line"></i>
+            <span>Transaction</span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-header">
+            <i class="ri-history-line"></i>
+            <span>Activity Log</span>
+            <i class="fas fa-chevron-down arrow"></i>
+          </div>
+          <div class="submenu">
+            <a href="#" class="submenu-item">Activity 1</a>
+            <a href="#" class="submenu-item">Activity 2</a>
+            <a href="#" class="submenu-item">Activity 3</a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-header">
+            <i class="ri-plug-line"></i>
+            <span>Api</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="nav-left">
+          <button class="mobile-menu-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="m11 17-5-5 5-5"></path>
+              <path d="m18 17-5-5 5-5"></path>
+            </svg>
+          </button>
+          <button class="collapse-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="m11 17-5-5 5-5"></path>
+              <path d="m18 17-5-5 5-5"></path>
+            </svg>
+          </button>
+        </div>
+
+        <div class="nav-right">
+          <button class="theme-toggle">
+            <i class="fas fa-sun"></i>
+          </button>
+          <div class="nav-item">
+            <i class="fas fa-bell"></i>
+          </div>
+          <div class="nav-item">
+            <i class="fas fa-cog"></i>
+          </div>
+          <div class="profile">
+            <img src="/api/placeholder/32/32" alt="Profile" />
+          </div>
+        </div>
+      </nav>
+
+      <!-- Page Content -->
+      <div class="content">
+        <!-- Your page content goes here -->
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
