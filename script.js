@@ -6,15 +6,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
   const menuItems = document.querySelectorAll(".menu-item");
   const themeToggle = document.querySelector(".theme-toggle");
+  const sunIcon = document.getElementById("sunIcon");
+  const moonIcon = document.getElementById("moonIcon");
 
   // Theme Management
   function toggleTheme() {
     document.body.classList.toggle("dark-mode");
     const isDark = document.body.classList.contains("dark-mode");
 
-    // Update theme toggle icon
-    const themeIcon = themeToggle.querySelector("i");
-    themeIcon.className = isDark ? "fas fa-moon" : "fas fa-sun";
+    // Toggle visibility of sun and moon icons
+    sunIcon.style.display = isDark ? "none" : "inline";
+    moonIcon.style.display = isDark ? "inline" : "none";
 
     // Save theme preference
     localStorage.setItem("theme", isDark ? "dark" : "light");
@@ -24,7 +26,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const savedTheme = localStorage.getItem("theme");
   if (savedTheme === "dark") {
     document.body.classList.add("dark-mode");
-    themeToggle.querySelector("i").className = "fas fa-moon";
+    sunIcon.style.display = "none";
+    moonIcon.style.display = "inline";
+  } else {
+    sunIcon.style.display = "inline";
+    moonIcon.style.display = "none";
   }
 
   // Sidebar Toggle for Desktop
@@ -57,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Rotate arrow icon for the active menu item
     const arrow = menuItem.querySelector(".arrow");
     if (arrow) {
-      arrow.style.transform = isActive ? "rotate(0deg)" : "rotate(180deg)";
+      arrow.style.transform = isActive ? "rotate(0deg)" : "rotate(90deg)";
     }
   }
 
